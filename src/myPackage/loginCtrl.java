@@ -76,7 +76,7 @@ public class loginCtrl {
         String password = hm.get("password");
         for (Account account : vacc) {
             if(account.getUsername().equalsIgnoreCase(username)){                    
-                if("dieple".equalsIgnoreCase(password)){
+                if(account.getPassword().equalsIgnoreCase(password)){
                     view.reset();
                     view.setVisible(false);
 

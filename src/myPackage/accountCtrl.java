@@ -110,6 +110,7 @@ public class accountCtrl {
 
         @Override
         public void actionPerformed(ActionEvent e) {
+            form_view.setData(null);
             form_view.setVisible(true);
         }
     }
@@ -156,7 +157,7 @@ public class accountCtrl {
             account.setId(vacc.size());
         }else{
             int id = vacc.lastElement().getId();
-            account.setId(id);
+            account.setId(id + 1);
         }
         
         vacc.add(account);

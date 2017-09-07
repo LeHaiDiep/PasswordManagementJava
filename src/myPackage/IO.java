@@ -25,7 +25,7 @@ public class IO {
 
     public IO(String file_name) {
         this.file_name = file_name;
-        file = new File(file_name);
+        file = new File(file_name); 
     }
    
    public boolean check_exist(){
@@ -57,4 +57,8 @@ public class IO {
        }
        return null;
    }
+   
 }
+
+
+

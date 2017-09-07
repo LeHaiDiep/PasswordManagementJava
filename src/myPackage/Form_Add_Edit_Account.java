@@ -220,9 +220,11 @@ public class Form_Add_Edit_Account extends javax.swing.JFrame implements ActionL
     
     public void setData(Account account){
         this.account = account;
-        txt_form_website_name.setText(account.getWebsite());
-        txt_form_user.setText(account.getUsername());
-        txt_form_pass.setText(account.getPassword());
+        if(account != null){
+            txt_form_website_name.setText(account.getWebsite());
+            txt_form_user.setText(account.getUsername());
+            txt_form_pass.setText(account.getPassword());
+        }
     }
     
     public void reset_info(String title, String btn_text){
